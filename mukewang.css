@@ -1,0 +1,971 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	color: red;
+}
+/*背景图*/
+.beijing{
+	width: 100%;
+	height: 480px;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+@media screen and (max-width:1450px) {
+	.beijing{
+		width: 1450px;
+		height: 480px;
+	}
+}
+/*logo*/
+.logo{
+	position: absolute;
+	margin-top: 19px;
+	margin-left: 100px;
+}
+.header{
+	height: 80px;
+}
+.headerLeft{
+	margin-left: 246px;
+}
+.headerLeft li{
+	float: left;
+	margin-left: 37px;
+	margin-top: 31px;
+	font-size: 16px;
+	color: #07111b;
+}
+.headerRight{
+	float: right;
+	margin-right: 22px;
+}
+.shouJiTu{
+	width: 12px;
+	height: 18px;
+	background-image: url(images/手机.png);
+	position: absolute;
+}
+.shouJiTu:hover{
+	width: 12px;
+	height: 18px;
+	background-image: url(images/手机红.png);
+}
+.headerRight1 li{
+	float: left;
+	margin-right: 32px;
+	margin-top: 34px;
+	font-size: 14px;
+	line-height: 14px;
+	color: #787d82;
+}
+.sousuo{
+	width: 230px;
+	height: 25px;
+	border-bottom: 1px solid lightgray;
+	position: absolute;
+	margin-top: 35px;
+	right: 228px;
+	padding-left: 10px;
+}
+.sousuo input{
+	height: 14px;
+	border: none;
+	background-color: transparent;
+	outline: none;
+}
+.souSuoTu{
+	width: 17px;
+	height: 17px;
+	background-image: url(images/搜索.png);
+	position: absolute;
+	margin-left: 80px;
+}
+.souSuoTu:hover{
+	width: 17px;
+	height: 17px;
+	background-image: url(images/搜索红.png);
+}
+.muKeWang{
+	width: 160px;
+	height: 196px;
+	background-color: white;
+	position: absolute;
+	margin-top: 50px;
+	margin-left: -78px;
+	text-align: center;
+	z-index: 10;
+	display: none;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.muKeWang p:nth-child(1){
+	padding-top: 20px;
+	font-size: 14px;
+	color: #14191e;
+}
+.muKeWang p:nth-child(2){
+	line-height: 20px;
+	font-size: 12px;
+	color: #787d82;
+}
+.muKeWang img{
+	margin-top: 10px;
+}
+.sanJiao{
+	width: 0px;
+	height: 0px;
+	border: 10px solid transparent;
+	border-bottom-color: white;
+	position: absolute;
+	top: -20px;
+	margin-left: 75px;
+}
+/*整体*/
+.zhengti{
+	width: 1200px;
+	margin: 0 auto;
+}
+/*轮播图*/
+.lunbotu{
+	width: 1200px;
+	height: 460px;
+}
+.lunbo li{
+	position: absolute;
+	opacity: 0;
+}
+.lunbo .active{
+	opacity: 1;
+}
+.quanquan li{
+	width: 10px;
+	height: 10px;
+	background-color: #9395a9;
+	position: absolute;
+	border-radius: 50%;
+	margin-left: 1142px;
+	margin-top: 414px;
+	cursor: pointer;
+}
+.quanquan li:nth-child(2){
+	margin-left: 1162px;
+}
+.quanquan .active{
+	background-color: white;
+}
+.lunBtn{
+	width: 40px;
+	height: 80px;
+	background-color: rgba(0,0,0,0);
+	position: absolute;
+	margin-left: 245px;
+	margin-top: 180px;
+	font-size: 40px;
+	line-height: 80px;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+}
+.lunBtn:hover{
+	background-color: rgba(0,0,0,0.5);
+}
+.lunBtnRight{
+	position: absolute;
+	margin-left: 1160px;
+}
+/*选项卡*/
+.xuanxiang{
+	position: absolute;
+	width: 202px;
+	height: 448px;
+	padding: 6px 21px 6px 22px;
+	background-color: rgba(0,0,0,0.2);
+}
+.yinyingzi{
+	width: 197px;
+	height: 63px;
+	line-height: 64px;
+	color: #f5f5f5;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	padding-left: 5px;
+}
+.yinyingzi span{
+	position: absolute;
+	right: 35px;
+}
+.yinying{
+	width: 223px;
+	height: 64px;
+	margin-left: -22px;
+	padding-left: 22px;
+}
+.yinying:hover{
+	background-color: rgba(0,0,0,0.3);
+}
+/*隐藏的内容*/
+.yinCangTu{
+	display: none;
+	width: 732px;
+	height: 460px;
+	background-color: white;
+	position: absolute;
+	margin-left: 223px;
+	top: 0px;
+}
+.yinCangNei{
+	position: absolute;
+	top: 10px;
+	left: 50px; 
+}
+.yinCangNei .yinCangNei_zi{
+	color: red;
+	font-size: 16px;
+	padding: 30px 0 15px 0;
+}
+.yinCangNei .yinCangNei_zi1{
+	display: block;
+	font-size: 14px;
+	line-height: 30px;
+}
+/*实战推荐*/
+.shiZhan{
+	position: relative;
+}
+.tuijian{
+	position: absolute;
+	width: 1200px;
+	margin-top: 41px;
+}
+.tuijianLeft{
+	font-size: 16px;
+	color: #272727;
+}
+.tuijianRight{
+	position: absolute;
+	right: 5px;
+	font-size: 14px;
+	color: #4d555d;
+}
+.tuijianRight:hover{
+	color: #a4a1aa;
+}
+.tuijian_tu{
+	position: absolute;
+	margin-top: 82px;
+}
+.tuijian_tu>span{
+	display: inline-block;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+	height: 168px;
+	overflow: hidden;
+	position: relative;
+}
+.xiangYingShi{
+	margin-left: 16px;
+}
+.tuijian_tuZi{
+	width: 184px;
+	height: 42px;
+	background-color: white;
+	position: absolute;
+	margin-top: -2px;
+	line-height: 42px;
+	font-size: 12px;
+	padding: 0 20px;
+	z-index: 1;
+}
+.tuijian_tuZi span:nth-child(1){
+	color: red;
+}
+.tuijian_tuZi span:nth-child(2){
+	color: #a4a1aa;
+	position: absolute;
+	right: 20px;
+}
+.tuijian_nei{
+	position: absolute;
+	width: 224px;
+	height: 144px;
+	background-color: rgba(255,255,255,0.95);
+	margin-top: -37px;
+	transition: all 0.5s;
+}
+.tuijian_nei h3{
+	padding: 20px 20px 10px;
+	color: #2c3238;
+	font-size: 14px;
+}
+.tuijian_nei p{
+	padding: 0px 20px 10px;
+	color: #a4a1aa;
+	font-size: 12px;
+	line-height: 20px;
+	
+}
+.tuijian_tu>span:hover .tuijian_nei{
+	transform: translateY(-70px);
+	background-color: rgba(255,255,255,0.97);
+}
+.tuijian_tu>span:hover{
+	box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+/*免费好课*/
+.mianfei{
+	height: 250px;
+	margin-top: 250px;
+	position: relative;
+}
+.tuijian_tu .tuijian_tuZi .xuexi{
+	color: #a4a1aa;
+}
+/*中间*/
+.centent{
+	margin-top: 48px;
+	width: 100%;
+	background-color: #f3f5f7;
+}
+/*Web前端工程师*/
+.web{
+	width: 1200px;
+	height: 364px;
+	padding-top: 48px;
+}
+.webshi p{
+	color: white;
+	font-size: 32px;
+	padding-left: 20px;
+	margin-top: -330px;
+}
+.webshi a{
+	display: inline-block;
+	width: 184px;
+	height: 28px;
+	line-height: 28px;
+	overflow: hidden;
+}
+.webshi a:nth-child(3){
+	margin-left: 20px;
+	color: white;
+	font-size: 16px;
+	margin-top: 38px;
+	position: absolute;
+}
+.webshi a span{
+	margin-left: 10px;
+}
+.webshi a:nth-child(4){
+	margin-left: 20px;
+	color: #c03;
+	font-size: 12px;
+	margin-top: 166px;
+	position: absolute;
+}
+.webshi a:nth-child(4):hover{
+	color: red;
+}
+.webshi a:nth-child(5){
+	margin-left: 20px;
+	color: #c03;
+	font-size: 12px;
+	margin-top: 193px;
+	position: absolute;
+}
+.webshi a:nth-child(5):hover{
+	color: red;
+}
+.webshi a:nth-child(6){
+	margin-left: 20px;
+	color: #c03;
+	font-size: 12px;
+	margin-top: 222px;
+	position: absolute;
+}
+.webshi a:nth-child(6):hover{
+	color: red;
+}
+/*信息展示*/
+.web .xinXi{
+	width: 468px;
+	height: 172px;
+	background-image: url(images/信息展示.jpg);
+	margin-left: 245px;
+	margin-top: -100px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.web .xinXi p{
+	font-size: 20px;
+	color: white;
+	line-height: 172px;
+	text-align: center;
+}
+.web .xinXi:hover{
+	box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+/*组件式开发*/
+.web .zuJian{
+	width: 468px;
+	height: 172px;
+	background-image: url(images/组件式开发.jpg);
+	margin-left: 245px;
+	margin-top: 20px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.web .zuJian p{
+	font-size: 20px;
+	color: white;
+	line-height: 172px;
+	text-align: center;
+}
+.web .zuJian:hover{
+	box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+/*DOM探索*/
+.domTanSuo{
+	margin-left: 732px;
+	margin-top: -364px;
+	position: relative;
+	width: 224px;
+	height: 172px;
+	overflow: hidden;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.webNei_xuexi{
+	width: 184px;
+	background-color: white;
+	position: absolute;
+	margin-top: 2px;
+	line-height: 42px;
+	font-size: 12px;
+	color: #a4a1aa;
+	padding: 0 20px;
+	z-index: 1;
+}
+.webNei_nei{
+	position: absolute;
+	width: 224px;
+	height: 144px;
+	background-color: rgba(255,255,255,0.95);
+	line-height: 20px;
+	margin-top: -37px;
+	transition: all 0.5s;
+}
+.webNei_nei h3{
+	padding: 20px 20px 10px;
+	color: #2c3238;
+	font-size: 14px;
+}
+.webNei_nei p{
+	padding: 0px 20px 10px;
+	color: #a4a1aa;
+	font-size: 12px;
+	line-height: 20px;
+}
+.domTanSuo:hover{
+	box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.webNei:hover .webNei_nei{
+	transform: translateY(-70px);
+	background-color: rgba(255,255,255,0.95);
+}
+/*列车时*/
+.lieChe{
+	margin-left: 732px;
+	margin-top: 20px;
+	position: relative;
+	width: 224px;
+	height: 172px;
+	overflow: hidden;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.lieChe:hover{
+	box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+/*倒计时*/
+.daoJiShi{
+	margin-left: 976px;
+	margin-top: -364px;
+	position: relative;
+	width: 224px;
+	height: 364px;
+	overflow: hidden;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.webNei_neiRong{
+	position: absolute;
+	width: 224px;
+	height: 144px;
+	background-color: rgba(255,255,255,0.95);
+	margin-top: -37px;
+	transition: all 0.5s;
+}
+.webNei_neiRong h3{
+	padding: 20px 20px 10px;
+	color: #2c3238;
+	font-size: 14px;
+	line-height: 20px;
+}
+.webNei_neiRong p{
+	padding: 0px 20px 10px;
+	color: #a4a1aa;
+	font-size: 12px;
+	line-height: 20px;
+}
+a:hover .webNei_neiRong{
+	transform: translateY(-70px);
+	background-color: rgba(255,255,255,0.95);
+}
+.xueXiNei{
+	height: 192px;
+}
+.webNei .xueXiNei{
+	position: absolute;
+	z-index: 2;
+	display: inline-block;
+	background-color: white;
+	margin-top: 44px;
+}
+.xueXiNei .zhiXian{
+	margin: auto;
+	width: 184px;
+	margin-left: 20px;
+	border-bottom: 1px solid #dbdee1;
+}
+.xueXiNei .neiRong{
+	width: 224px;
+	list-style: square;
+	margin-left: 30px;
+	font-size: 12px;
+	color: #171717;
+	line-height: 30px;
+	margin-top: 10px;
+	padding-bottom: 30px;
+}
+.daoJiShi:hover{
+	box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+/*Java工程师*/
+.web .gongLue{
+	width: 712px;
+	height: 172px;
+	background-image: url(images/java攻略.jpg);
+	margin-left: 245px;
+	margin-top: -100px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.web .gongLue p{
+	font-size: 20px;
+	color: white;
+	line-height: 172px;
+	text-align: center;
+}
+.web .webshi .javaColor{
+	color: #006699;
+}
+.web .webshi .javaColor:hover{
+	color: #0080ff;
+}
+.web .gongLue:hover{
+	box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+/*Strust2+Hibernate整合开发案例！*/
+.hibernate{
+	margin-left: 244px;
+	margin-top: -172px;
+	position: relative;
+	width: 224px;
+	height: 172px;
+	overflow: hidden;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.hibernate:hover{
+	box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+/*Java实现高并发秒杀API的第三门课！*/
+.javasan{
+	margin-left: 488px;
+	margin-top: -172px;
+	position: relative;
+	width: 224px;
+	height: 172px;
+	overflow: hidden;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.javasan:hover{
+	box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+/*PHP工程师*/
+.web .webshi .phpColor{
+	color: #514da4;
+}
+.web .webshi .phpColor:hover{
+	color: #6a6aff;
+}
+.web .phpTu{
+	width: 468px;
+	height: 364px;
+	margin-left: 244px;
+	margin-top: -100px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+	background-image: url(images/微信.jpg);
+}
+.web .phpTu:hover{
+	box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.phpTu p:nth-child(1){
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.duanXian{
+	width: 206px;
+	border-bottom: 1px solid #c3d4e3;
+	margin: 0 auto;
+}
+.phpTu p:nth-child(3){
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+}
+.weiZhi{
+	position: absolute;
+	margin-top: 127px;
+	margin-left: 100px;
+}
+/*安卓工程师*/
+.web .webshi .andColor{
+	color: #006633;
+}
+.web .webshi .andColor:hover{
+	color: #00bb00;
+}
+.web .anZhuo{
+	background-image: url(images/侧滑菜单.jpg);
+}
+/*iOS工程师*/
+.web .webshi .guofen{
+	margin-top: 15px;
+}
+.web .webshi .iosColor{
+	color: #006666;
+}
+.web .webshi .iosColor:hover{
+	color: #00aeae;
+}
+.web .iosTu1{
+	background-image: url(images/玩儿转.jpg);
+}
+.web .iosTu2{
+	background-image: url(images/基础教程.jpg);
+}
+/*Linux运维工程师*/
+.linuxyun{
+	width: 1200px;
+	height: 172px;
+	padding-top: 48px;
+}
+.linux{
+	position: absolute;
+	margin-top: -160px;
+}
+.linuxshi p{
+	color: white;
+	font-size: 32px;
+	padding-left: 20px;
+	margin-top: -138px;
+}
+.linuxshi a{
+	display: inline-block;
+	width: 184px;
+	height: 28px;
+	color: white;
+	margin-left: 20px;
+	margin-top: 30px;
+	line-height: 28px;
+	overflow: hidden;
+}
+.linuxRight{
+	position: absolute;
+	margin-left: 976px;
+	margin-top: -160px;
+}
+/*手记&猿问*/
+.book{
+	height: 414px;
+}
+.book .webshi .shouJi{
+	width: 185px;
+	height: 34px;
+	border: 1px solid white;
+	border-radius: 3px;
+	font-size: 14px;
+	line-height: 34px;
+	color: white;
+	text-align: center;
+}
+.book .webshi .shouJi1{
+	position: absolute;
+	margin-top: 120px;
+}
+.book .webshi .shouJi2{
+	position: absolute;
+	margin-top: 164px;
+}
+.book .webshi .shouJi3{
+	position: absolute;
+	margin-top: 208px;
+}
+p .book_zi{
+	font-size: 14px;
+}
+.web .bookTop1{
+	width: 468px;
+	height: 172px;
+	background-image: url(images/算法.jpg);
+	margin-left: 244px;
+	margin-top: -100px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.web .bookTop1 p{
+	font-size: 20px;
+	color: white;
+	line-height: 172px;
+	text-align: center;
+}
+.web .bookTop1:hover{
+	box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+.web .bookBottom1{
+	width: 468px;
+	height: 172px;
+	background-color: white;
+	margin-left: 244px;
+	margin-top: 20px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.web .bookBottom1 p{
+	font-size: 20px;
+	color: white;
+	line-height: 172px;
+	text-align: center;
+}
+.web .bookBottom1:hover{
+	box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+.web .bookTop2{
+	width: 468px;
+	height: 172px;
+	background-image: url(images/指教.jpg);
+	margin-left: 732px;
+	margin-top: -364px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.web .bookTop2 p{
+	font-size: 20px;
+	color: white;
+	line-height: 172px;
+	text-align: center;
+}
+.web .bookTop2:hover{
+	box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+.web .bookBottom2{
+	position: absolute;
+	width: 468px;
+	height: 172px;
+	background-color: white;
+	margin-left: 732px;
+	margin-top: 20px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.web .bookBottom2 p{
+	font-size: 20px;
+	color: white;
+	line-height: 172px;
+	text-align: center;
+}
+.web .bookBottom2:hover{
+	box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+.biJi{
+	font-size: 20px;
+	color: #07111b;
+	font-weight: 700;
+	position: absolute;
+	margin-top: 34px;
+	margin-left: 37px;
+}
+.biJi_zi{
+	font-size: 14px;
+	color: #07111b;
+	line-height: 30px;
+	position: absolute;
+	margin-top: 26px;
+	margin-left: 150px;
+}
+/*底部*/
+footer{
+	width: 1200px;
+	height: 175px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 32px;
+}
+.tuBiao1{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-image: url(images/图标.png);
+	margin-left: 23px;
+}
+.tuBiao2{
+	background-position: 188px 73px;
+}
+.tuBiao3{
+	background-position: 136px 73px;
+}
+.tuBiao4{
+	background-position: 84px 73px;
+}
+.tuBiao5{
+	background-position: 32px 73px;
+}
+.tuBiao2:hover{
+	background-position: 188px 32px;
+}
+.tuBiao3:hover{
+	background-position: 136px 32px;
+}
+.tuBiao4:hover{
+	background-position: 84px 32px;
+}
+.tuBiao5:hover{
+	background-position: 32px 32px;
+}
+.erWeiMa{
+	width: 188px;
+	height: 220px;
+	background-image: url(images/图标.png);
+	position: absolute;
+	margin-top: -250px;
+	margin-left: 495px;
+	display: none;
+}
+.fangshi{
+	margin-top: 28px;
+	border-bottom: 1px solid #dbdee1;
+	padding-bottom: 29px;
+}
+.fangshi span a{
+	margin-left: 20px;
+	font-size: 14px;
+	color: #a9afb3;
+}
+.fangshi span a:hover{
+	color: red;
+}
+.banben{
+	margin-top: 23px;
+	font-size: 12px;
+	color: #99a1a6;
+}
+.rightLan{
+	width: 26px;
+	height: 158px;
+	padding: 0 15px;
+	background-color: white;
+	position: fixed;
+	box-shadow: -5px 5px 10px rgba(0,0,0,0.1);
+	top: 70%;
+	right: 0px;
+	z-index: 20;
+}
+.rightLan div:nth-child(1){
+	width: 16px;
+	height: 16px;
+	background-image: url(images/wen.png);
+	margin: 23px auto 0;
+	cursor: pointer;
+}
+.rightLan div:nth-child(2){
+	width: 26px;
+	border-bottom: 1px solid #edf1f2;
+	margin: 15px auto 0;
+}
+.fangDa1{
+	width: 12px;
+	height: 18px;
+	background-image: url(images/手机灰.png);
+	margin: 15px auto 0;
+	cursor: pointer;
+	z-index: 20;
+}
+.rightLan div:nth-child(4){
+	width: 26px;
+	border-bottom: 1px solid #edf1f2;
+	margin: 15px auto 0;
+}
+.fangDa2{
+	width: 18px;
+	height: 18px;
+	background-image: url(images/qi.png);
+	margin: 15px auto 0;
+	cursor: pointer;
+	z-index: 20;
+}
+.rightLan div:nth-child(1):hover{
+	width: 16px;
+	height: 16px;
+	background-image: url(images/wen黑.png);
+	margin: 23px auto 0;
+}
+.fangDa1:hover{
+	background-image: url(images/手机黑.png);
+}
+.fangDa2:hover{
+	background-image: url(images/qi黑.png);
+}
+.rightLanTu1{
+	width: 160px;
+	height: 179px;
+	position: absolute;
+	top: -37px;
+	left: -160px;
+	transform-origin: 160px 180px;
+	transform: scale(0,0);
+	box-shadow: -5px 5px 10px rgba(0,0,0,0.1);
+}
+.rightLanTu2{
+	width: 160px;
+	height: 199px;
+	position: absolute;
+	top: -57px;
+	left: -160px;
+	transform-origin: 160px 200px;
+	transform: scale(0,0);
+	box-shadow: -5px 5px 10px rgba(0,0,0,0.1);
+}
+.fangDa1:hover .rightLanTu1{
+	animation: move 1s forwards;
+}
+.fangDa2:hover .rightLanTu2{
+	animation: move 1s forwards;
+}
+@-webkit-keyframes move{
+	from{
+		transform: scale(0,0);
+	}
+	to{
+		transform: scale(1,1);
+	}
+}
